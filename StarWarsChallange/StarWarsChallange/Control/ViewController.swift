@@ -7,16 +7,10 @@
 
 import UIKit
 
-struct Personaggi : Codable {
-    
-    let Nome: String
-    let Avatar: String
-    
-}
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate  {
     
-    var arrayIcons = [Personaggi(Nome: "", Avatar: "")]
+    private var viewModel: StarWarsViewModel?
     
     @IBOutlet weak var StarWarsCollection: UICollectionView!
     
