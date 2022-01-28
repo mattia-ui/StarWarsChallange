@@ -15,11 +15,29 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var StarWarsCollection: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return  0 //TODO
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCellIcon", for: indexPath) as! CharactersCell
+    
+        //Customize cell
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        cell.layer.cornerRadius = 10
+        cell.layer.masksToBounds = false
+        cell.layer.shadowColor = UIColor.black
+            .cgColor
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        cell.layer.shadowRadius = 4.0
+   
+        //TODO VALORIZZARE PROPRIETà CELLA
+        
+        return cell
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
