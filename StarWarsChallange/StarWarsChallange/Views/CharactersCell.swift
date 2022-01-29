@@ -12,4 +12,11 @@ class CharactersCell: UICollectionViewCell {
     @IBOutlet weak var Avatar: UIImageView!
     @IBOutlet weak var Nome: UILabel!
     
+    var person: Person! {
+        didSet {
+            Nome?.text = person.name
+        }
+    
+    }
+    
 }

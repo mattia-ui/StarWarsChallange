@@ -8,7 +8,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate  {
+class SWCharactersViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate  {
     
     private var viewModel: StarWarsViewModel?
     
@@ -33,7 +33,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
         cell.layer.shadowRadius = 4.0
    
-        //TODO VALORIZZARE PROPRIETà CELLA
+        
+        cell.Nome.text = viewModel?.findPerson(at: indexPath.row).name
         
         return cell
         
