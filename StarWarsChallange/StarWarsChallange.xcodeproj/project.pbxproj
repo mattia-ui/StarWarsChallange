@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		462A642627A5430E003B1C98 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A642527A5430E003B1C98 /* Root.swift */; };
 		462A642927A544C8003B1C98 /* SWDelegateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A642827A544C8003B1C98 /* SWDelegateExtensions.swift */; };
+		466478AB27A605EB0067E643 /* ApiAvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466478AA27A605EB0067E643 /* ApiAvatarController.swift */; };
+		466478AD27A606940067E643 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466478AC27A606940067E643 /* Avatar.swift */; };
 		469671B427A46B7300E3EC49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469671B327A46B7300E3EC49 /* AppDelegate.swift */; };
 		469671B627A46B7300E3EC49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469671B527A46B7300E3EC49 /* SceneDelegate.swift */; };
 		469671B827A46B7300E3EC49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469671B727A46B7300E3EC49 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		462A642527A5430E003B1C98 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		462A642827A544C8003B1C98 /* SWDelegateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWDelegateExtensions.swift; sourceTree = "<group>"; };
+		466478AA27A605EB0067E643 /* ApiAvatarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAvatarController.swift; sourceTree = "<group>"; };
+		466478AC27A606940067E643 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		469671B027A46B7300E3EC49 /* StarWarsChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469671B327A46B7300E3EC49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469671B527A46B7300E3EC49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				469671F227A4A14400E3EC49 /* Film.swift */,
 				469671F627A4A20C00E3EC49 /* Vehicle.swift */,
 				462A642527A5430E003B1C98 /* Root.swift */,
+				466478AC27A606940067E643 /* Avatar.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			children = (
 				469671B727A46B7300E3EC49 /* ViewController.swift */,
 				469671E827A49C6200E3EC49 /* ApiController.swift */,
+				466478AA27A605EB0067E643 /* ApiAvatarController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -325,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466478AD27A606940067E643 /* Avatar.swift in Sources */,
+				466478AB27A605EB0067E643 /* ApiAvatarController.swift in Sources */,
 				469671EF27A4A10500E3EC49 /* StarWarsViewModel.swift in Sources */,
 				469671B827A46B7300E3EC49 /* ViewController.swift in Sources */,
 				462A642927A544C8003B1C98 /* SWDelegateExtensions.swift in Sources */,

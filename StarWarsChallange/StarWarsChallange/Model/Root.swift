@@ -13,3 +13,10 @@ struct RootResponse: Decodable {
     let previous: URL?
     let results: [Person]
 }
+
+struct RootAvatarResponse: Decodable {
+    let count: Int
+    let next: URL?
+    let previous: URL?
+    let results: [Avatar]
+}

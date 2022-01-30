@@ -19,4 +19,19 @@ class CharactersCell: UICollectionViewCell {
     
     }
     
+    var avatar: Avatar! {
+        didSet {
+            Avatar?.image = avatar.image
+        }
+    
+    }
+    
+    static var nib: UINib {
+        return UINib(nibName: String(describing: self), bundle: nil)
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
 }

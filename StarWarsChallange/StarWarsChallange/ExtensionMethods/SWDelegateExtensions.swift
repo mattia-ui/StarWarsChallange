@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension SWCharactersViewController: StarWarsViewModelDelegate {
     func fetchDidSucceed() {
@@ -18,3 +19,5 @@ extension SWCharactersViewController: StarWarsViewModelDelegate {
         //TODO
     }
 }
+
+
