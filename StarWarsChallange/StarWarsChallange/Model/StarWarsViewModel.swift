@@ -23,8 +23,9 @@ class StarWarsViewModel {
     init(delegate: StarWarsViewModelDelegate) {
         self.delegate = delegate
     }
-    
+    private var vehicles: [Vehicle] = []
     private var films: [Film] = []
+    
     var starWarsPeople: [Person] = [] {
         didSet {
             //Index outOfRange
@@ -67,6 +68,14 @@ class StarWarsViewModel {
     
     func findAvatar(at index: Int) -> Avatar {
         return avatar[index]
+    }
+    
+    func findFilm(at index: Int) -> [Film] {
+        return films
+    }
+    
+    func findVehicles(at index: Int) -> [Vehicle] {
+        return vehicles
     }
     
     func fetchPeople() {
@@ -139,6 +148,22 @@ class StarWarsViewModel {
     }
     
     //Todo fetch Vehicles
-    
+    func fetchVehicles(with url: URL) {
+        apiClient.fetch(with: url, page: nil, dataType: Vehicle.self) { result in
+            switch result {
+            case .failure(let error):
+                
+                DispatchQueue.main.async {
+                    self.delegate?.fetchDidFail(with: error.reason, description: error.localizedDescription)
+                }
+            case .success(let vehicle):
+                
+                DispatchQueue.main.async {
+                    self.vehicles.append(vehicle)
+                    self.delegate?.fetchDidSucceed()
+                }
+            }
+        }
+    }
     
 }

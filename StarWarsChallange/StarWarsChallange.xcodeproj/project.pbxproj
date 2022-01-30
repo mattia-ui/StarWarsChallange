@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4600973827A6A989005CA6B5 /* DetailCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600973727A6A989005CA6B5 /* DetailCharacterViewController.swift */; };
 		462A642627A5430E003B1C98 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A642527A5430E003B1C98 /* Root.swift */; };
 		462A642927A544C8003B1C98 /* SWDelegateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A642827A544C8003B1C98 /* SWDelegateExtensions.swift */; };
 		466478AB27A605EB0067E643 /* ApiAvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466478AA27A605EB0067E643 /* ApiAvatarController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4600973727A6A989005CA6B5 /* DetailCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterViewController.swift; sourceTree = "<group>"; };
 		462A642527A5430E003B1C98 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		462A642827A544C8003B1C98 /* SWDelegateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWDelegateExtensions.swift; sourceTree = "<group>"; };
 		466478AA27A605EB0067E643 /* ApiAvatarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAvatarController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				469671B727A46B7300E3EC49 /* ViewController.swift */,
 				469671E827A49C6200E3EC49 /* ApiController.swift */,
 				466478AA27A605EB0067E643 /* ApiAvatarController.swift */,
+				4600973727A6A989005CA6B5 /* DetailCharacterViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				469671B627A46B7300E3EC49 /* SceneDelegate.swift in Sources */,
 				462A642627A5430E003B1C98 /* Root.swift in Sources */,
 				469671F127A4A13200E3EC49 /* Person.swift in Sources */,
+				4600973827A6A989005CA6B5 /* DetailCharacterViewController.swift in Sources */,
 				469671F327A4A14400E3EC49 /* Film.swift in Sources */,
 				469671F727A4A20C00E3EC49 /* Vehicle.swift in Sources */,
 				469671E727A46EE700E3EC49 /* CharactersCell.swift in Sources */,

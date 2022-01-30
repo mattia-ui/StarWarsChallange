@@ -85,7 +85,7 @@
                                         <connections>
                                             <outlet property="Avatar" destination="wGX-Gr-pwX" id="WXQ-qN-aBw"/>
                                             <outlet property="Nome" destination="PPt-Sa-Uom" id="SZA-db-KdJ"/>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" id="dPR-xZ-VCb"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="CellDetail" id="dPR-xZ-VCb"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
